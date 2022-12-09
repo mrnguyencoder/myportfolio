@@ -4,21 +4,30 @@ import Logo from '../assets/textnguyencoder.png';
 
 const style = {
     navbar:`
-    bg-green-400 shadow`,
+    bg-green-400 p-5 shadow
+    flex items-center justify-between`,
     logo: `
-    `
+    h-10 inline`,
+    links: `
+    flex items-center
+    `,
+    link: `
+    mx-4
+    text-xl hover-cyan-500 duration-500`,
 }
 
 function Navbar() {
   return (
     <nav className={style.navbar}>
-        <Link className={style.logo} to="/">
-            <img src={Logo} alt="logo nguyen coder" />
-        </Link>
+        <div>
+            <Link to="/">
+                <img className={style.logo} src={Logo} alt="logo nguyen coder" />
+            </Link>
+        </div>
         <div className={style.links}>
-            <Link className="link" >Home</Link>
-            <Link className="link" to="/projects">Projects</Link>
-            <Link className="link" to="/contact">Contact</Link>
+            <Link className={style.link} to="/about">About</Link>
+            <Link className={style.link} to="/projects">Projects</Link>
+            <Link className={style.link} to="/contact">Contact</Link>
         </div>
     </nav>
   )
