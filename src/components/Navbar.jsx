@@ -4,16 +4,16 @@ import Logo from '../assets/textnguyencoder.png';
 
 const style = {
     navbar:`
-    bg-green-400 p-5 shadow
+    bg-neutral-700 p-3 shadow
     flex items-center justify-between`,
     logo: `
-    h-10 inline`,
+    min-h-8 max-h-16`,
     links: `
     flex items-center
     `,
     link: `
-    mx-4
-    text-xl hover-cyan-500 duration-500`,
+    mx-3 md:mx-4 xl:mx-6
+    text-sm text-white md:text-lg xl:text-xl  `,
 }
 
 function Navbar() {

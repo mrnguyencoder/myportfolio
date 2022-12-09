@@ -9,8 +9,8 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
+    <div className="h-screen">
+      <Router className="flex ">
         <Navbar />
         <Routes>
           <Route path= "/" element={<Home />} />
