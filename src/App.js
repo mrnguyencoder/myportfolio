@@ -9,8 +9,8 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="h-screen">
-      <Router className="flex ">
+    <div className="max-h-screen">
+      <Router>
         <Navbar />
         <Routes>
           <Route path= "/" element={<Home />} />
@@ -18,7 +18,7 @@ function App() {
           <Route path= "/projects" element={<Projects />} />
           <Route path= "/contact" element={<Contact />} />
         </Routes>
-        <Footer />
+        <Footer className='bottom-0' />
       </Router>
     </div>
   );

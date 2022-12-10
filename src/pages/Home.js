@@ -5,13 +5,14 @@ import icon from '../assets/iconnguyencoder.png'
 
 function Home() {
   return (
-    <div className='text-center p-16'>
+    <div className='w-full h-screen text-center p-16'>
         <h2 className="text-4xl md:text-6xl py-4 
                         text-transparent font-bold bg-clip-text
                         bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
             Hello World
             <span class="animate-wave inline-block origin-[70%_70%]">👋</span>
         </h2>
+        <p className='text-orange-300'>Hi, my nick name is Nguyen coder</p>
         <h3 className="text-3xl md:ext-5xl py-4
                         bg-gradient-to-r from-yellow-300 to-sky-400
                         text-transparent bg-clip-text">
