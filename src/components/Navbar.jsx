@@ -47,9 +47,9 @@ function Navbar() {
             ? 'hidden'
             : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
         }>
-            <Link onClick={handleClick} className='flex text-4xl py-10' to="/about"><HiOutlineCursorArrowRays className='pr-2'/>About</Link>
-            <Link onClick={handleClick} className='flex text-4xl py-10' to="/projects">Projects<HiShoppingCart className='pl-2'/></Link>
-            <Link onClick={handleClick} className='flex text-4xl py-10' to="/contact">Contact<HiOutlineChatBubbleOvalLeftEllipsis className='pl-2'/></Link>
+            <Link onClick={handleClick} className='flex text-4xl py-10 duration-500' to="/about"><HiOutlineCursorArrowRays className='pr-2'/>About</Link>
+            <Link onClick={handleClick} className='flex text-4xl py-10 duration-500' to="/projects">Projects<HiShoppingCart className='pl-2'/></Link>
+            <Link onClick={handleClick} className='flex text-4xl py-10 duration-500' to="/contact">Contact<HiOutlineChatBubbleOvalLeftEllipsis className='pl-2'/></Link>
 
             <div className="flex text-6xl py-6 justify-between">
             <a className='px-4 text-amber-600' href="https://www" rel='noreferrer' target="_blank"><AiOutlineWhatsApp/></a>
