@@ -1,8 +1,23 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
+import contact from '../assets/contact.png'
 
 function Contact() {
+  const {
+    register,
+    trigger,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = async (e) => {
+    console.log("~ e", e);
+    const isValid = await trigger();
+    if (!isValid) {
+      e.preventDefault();
+    }
+  };
+
   return (
     <section className='w-full h-screen text-center flex flex-col items-center justify-center px-4 ms:px-8 xl:px-12'>
       <h2 className="text-4xl md:text-5xl text-center my-8 mx-4 tracking-wide
@@ -30,7 +45,7 @@ function Contact() {
           }}
           className="basis-1/2 flex justify-center"
         >
-          <img src="../assets/contact-image.jpeg" alt="contact" />
+          <img src={contact} alt="contact" />
         </motion.div>
 
         <motion.div
@@ -103,7 +118,7 @@ function Contact() {
             )}
 
             <button
-              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-sky-500 transition duration-500"
               type="submit"
             >
               SEND ME A MESSAGE
