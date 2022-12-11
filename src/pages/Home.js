@@ -5,7 +5,7 @@ import icon from '../assets/iconnguyencoder.png'
 
 function Home() {
   return (
-    <div className='w-full h-screen text-center flex flex-col items-center justify-center px-4 ms:px-8 xl:px-12'>
+    <section className='w-full h-screen text-center flex flex-col items-center justify-center px-4 ms:px-8 xl:px-12'>
         <h2 className="text-4xl sm:text-6xl py-4 
                         text-transparent font-bold bg-clip-text
                         bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
@@ -26,7 +26,7 @@ function Home() {
             <FiBox />
         </div>
         <img className="mx-auto p-6 max-h-40" src={icon} alt="logo nguyen coder" />   
-    </div>
+    </section>
   )
 }
 
