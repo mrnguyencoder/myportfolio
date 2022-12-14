@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../assets/textnguyencoder.png';
 import { HiBars3BottomRight, HiOutlineChatBubbleOvalLeftEllipsis, HiOutlineCursorArrowRays, HiShoppingCart, HiXMark } from "react-icons/hi2";
 import { AiOutlineFacebook, AiOutlineInstagram, AiOutlineWhatsApp } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const style = {
     navbar:`
@@ -27,16 +28,44 @@ function Navbar() {
 
   return (
     <nav className={style.navbar}>
-        <div>
+        <motion.div
+            initial={{
+                x: -500,
+                opacity: 0,
+                scale: 0.5
+            }}
+            animate={{
+                x:0,
+                opacity:1,
+                scale:1
+            }}
+            transition={{
+                duration:1.5,
+            }}
+        >
             <Link to="/">
                 <img className={style.logo} src={Logo} alt="logo nguyen coder" />
             </Link>
-        </div>
-        <div className={style.links}>
+        </motion.div>
+        <motion.div className={style.links}
+              initial={{
+                x: 500,
+                opacity: 0,
+                scale: 0.5
+            }}
+            animate={{
+                x:0,
+                opacity:1,
+                scale:1
+            }}
+            transition={{
+                duration:1.5,
+            }}
+        >
             <Link className={style.link} to="/about">About</Link>
             <Link className={style.link} to="/projects">Projects</Link>
             <Link className={style.link} to="/contact">Contact</Link>
-        </div>
+        </motion.div>
         {/* Hamburger */}
         <div onClick={handleClick} className='md:hidden z-10'>
             {!nav ? <HiBars3BottomRight className='text-3xl' /> : <HiXMark className='text-3xl'/>}
