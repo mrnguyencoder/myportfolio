@@ -48,7 +48,7 @@ function Navbar() {
             </Link>
         </motion.div>
         <motion.div className={style.links}
-              initial={{
+            initial={{
                 x: 500,
                 opacity: 0,
                 scale: 0.5
@@ -67,9 +67,22 @@ function Navbar() {
             <Link className={style.link} to="/contact">Contact</Link>
         </motion.div>
         {/* Hamburger */}
-        <div onClick={handleClick} className='md:hidden z-10'>
+        <motion.div onClick={handleClick} className='md:hidden z-10'
+        initial={{
+            x: 500,
+            opacity: 0,
+            scale: 0.5
+        }}
+        animate={{
+            x:0,
+            opacity:1,
+            scale:1
+        }}
+        transition={{
+            duration:1.5,
+        }}>
             {!nav ? <HiBars3BottomRight className='text-3xl' /> : <HiXMark className='text-3xl'/>}
-        </div>
+        </motion.div>
         {/* Mobile toggle menu */}
         <div className={
           !nav
