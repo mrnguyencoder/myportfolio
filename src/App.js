@@ -8,7 +8,7 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="max-h-screen">
+    <div className="">
       <Router>
         <Navbar />
         <Routes>

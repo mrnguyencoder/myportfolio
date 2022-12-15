@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const style = {
     navbar:`
-    fixed w-full h-[64px] 
+    w-full h-[64px] 
     flex justify-between items-center 
     px-4 bg-[#0a192f] text-gray-300`,
     logo: `
@@ -17,6 +17,7 @@ const style = {
     `,
     link: `
     mx-3 md:mx-4 xl:mx-6
+    hover-text-blue-400
     text-sm text-white md:text-lg xl:text-xl  `,
 }
 

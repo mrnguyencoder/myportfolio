@@ -5,7 +5,26 @@ import icon from '../assets/iconnguyencoder.png';
 
 function Home() {
   return (
-    <div>
+    <div className=''>
+      <div className="m-3 rounded-xl bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500">
+        <div className="p-8">
+          <h1 className="text-2xl sm:text-6xl py-4
+                         text-transparent font-bold bg-clip-text
+                         bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                Nguyen Coder # JavaScript Dev
+                <span class="animate-wave inline-block origin-[70%_70%]">👋</span>
+          </h1>
+            <p className='text-orange-300'>Base in Paris, make code with love</p>
+            <p className="text-2xl md:text-3xl py-5 text-teal-400 leading-7">
+              I have been coding for 1 years. Love to make a wed-app with personal request</p>
+            <div className="text-xl flex justify-end gap-8 py-3 pr-3 text-emerald-300">
+                <FiLinkedin />
+                <FiGithub />
+                <FiInstagram />
+                <FiBox />
+            </div>
+        </div>
+      </div>
       
       {/* <section className='w-full h-screen text-center flex flex-col items-center justify-center px-4 ms:px-8 xl:px-12'>
           <h2 className="text-4xl sm:text-6xl py-4
