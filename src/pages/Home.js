@@ -5,9 +5,14 @@ import icon from '../assets/iconnguyencoder.png';
 
 function Home() {
   return (
-    <div className=''>
-      <div className="m-3 rounded-xl bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500">
-        <div className="p-8">
+    <div className='flex w-full'>
+      <div className="hidden w-[8%] m-3 md:flex flex-col items-center justify-around cursor-pointer border-b border-blue-500 hover:bg-gray-500">
+        <p className="">Home</p>
+        <p className="">Blog</p>
+        <p className="">Skill</p>
+      </div>
+      <div className="w-[92%] m-3 rounded-xl bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500">
+        <div className="p-6">
           <h1 className="text-2xl sm:text-6xl py-4
                          text-transparent font-bold bg-clip-text
                          bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
