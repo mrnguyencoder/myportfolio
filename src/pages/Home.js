@@ -17,10 +17,10 @@ function Home() {
           <h1 className="text-2xl sm:text-6xl py-4
                          text-transparent font-bold bg-clip-text
                          bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-                Nguyen Coder # JavaScript Dev     
+                <span class="inline-flex">👋</span>Nguyen Coder # JavaScript Dev     
           </h1>
             <p className='text-orange-300'>Base in Paris, make code with love
-              <span class="animate-bounce inline-block">👋</span>
+              <span class="animate-bounce inline-flex">👋</span>
             </p>
             <p className="text-2xl md:text-3xl py-5 text-teal-400 leading-7">
               I have been coding for 1 years. Love to make a wed-app with personal request</p>
