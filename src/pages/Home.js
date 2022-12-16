@@ -1,25 +1,27 @@
 import React from 'react';
 import { FiLinkedin, FiGithub, FiInstagram, FiBox  } from 'react-icons/fi';
-import icon from '../assets/iconnguyencoder.png';
+import { FcAbout, FcAssistant, FcHome, FcNews } from "react-icons/fc";
 
 
 function Home() {
   return (
     <div className='flex w-full'>
-      <div className="hidden w-[8%] m-3 md:flex flex-col items-center justify-around cursor-pointer border-b border-blue-500 hover:bg-gray-500">
-        <p className="">Home</p>
-        <p className="">Blog</p>
-        <p className="">Skill</p>
+      <div className="hidden w-[8%] m-3 md:flex flex-col items-center justify-around border-b border-blue-500">
+        <p className="flex flex-col justify-center items-center"> <FcHome />Home</p>
+        <p className="flex flex-col justify-center items-center"> <FcAbout />About</p>
+        <p className="flex flex-col justify-center items-center"> <FcNews />Blog</p>
+        <p className="flex flex-col justify-center items-center"> <FcAssistant />Contact</p>
       </div>
-      <div className="w-[92%] m-3 rounded-xl bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500">
+      <div className="w-full md:w-[92%] m-3 rounded-xl bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500">
         <div className="p-6">
           <h1 className="text-2xl sm:text-6xl py-4
                          text-transparent font-bold bg-clip-text
                          bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-                Nguyen Coder # JavaScript Dev
-                <span class="animate-wave inline-block origin-[70%_70%]">👋</span>
+                Nguyen Coder # JavaScript Dev     
           </h1>
-            <p className='text-orange-300'>Base in Paris, make code with love</p>
+            <p className='text-orange-300'>Base in Paris, make code with love
+              <span class="animate-bounce inline-block">👋</span>
+            </p>
             <p className="text-2xl md:text-3xl py-5 text-teal-400 leading-7">
               I have been coding for 1 years. Love to make a wed-app with personal request</p>
             <div className="text-xl flex justify-end gap-8 py-3 pr-3 text-emerald-300">
