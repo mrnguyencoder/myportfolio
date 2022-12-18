@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiLinkedin, FiGithub, FiInstagram, FiBox  } from 'react-icons/fi';
+import { FiLinkedin, FiGithub, FiInstagram } from 'react-icons/fi';
 import { FcAbout, FcAssistant, FcHome, FcNews } from "react-icons/fc";
 
 
@@ -15,7 +15,7 @@ function Home() {
       <div className="w-full md:w-[92%] ">
         <div className="container mx-auto
                         bg-gradient-to-r from-[#f0db4f] to-[#61dbfb]
-                        m-3 p-6 shadow-md
+                        m-3 p-6 shadow-md rounded-xl
         ">
           <p className="text-5xl text-[#3C873A] font-bold text-center mb-6">Welcome to My Site</p>
           <p className="text-3xl text-center text-blue-800 mb-4">
@@ -50,47 +50,14 @@ function Home() {
             <FiInstagram className="text-3xl"></FiInstagram>
           </a>
         </div>
-        <p className="text-gray-700 text-center mb-6">
-          Or send me an email at <a className="text-blue-500" href="mailto:mr.nguyencoder@gmail.com">mr.nguyencoder@gmail.com</a>
-        </p>
+
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-          <div className="text-center">
-            <button className="bg-[#61dbfb] hover:bg-[#3C873A] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-              Learn More
-            </button>
+          <div className="">
+            <a className="bg-[#61dbfb] text-white font-bold py-2 px-4 rounded" href="mailto:mr.nguyencoder@gmail.com">Send me an email</a>
           </div>
         </div>
 
-        <div className="m-3 rounded-xl bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 p-6 shadow-md">
-          <h1 className="text-2xl sm:text-6xl py-4
-                         text-transparent font-bold bg-clip-text
-                         bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-                <span class="inline-flex">👋</span>Nguyen Coder     
-          </h1>
-            <p className='text-orange-300'>JavaScript Dev
-              <span class="animate-bounce inline-flex">👋</span>
-            </p>
-            <p className="text-2xl md:text-3xl py-5 text-teal-400 leading-7">
-            Base in Paris, make code with love</p>
-            <div className="text-xl flex justify-end gap-8 py-3 pr-3 text-emerald-300">
-                <FiLinkedin />
-                <FiGithub />
-                <FiInstagram />
-                <FiBox />
-            </div>
-        </div>
+        
 
         <div className="m-3 rounded-xl p-6 bg-gray-50 shadow-md">
           <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
