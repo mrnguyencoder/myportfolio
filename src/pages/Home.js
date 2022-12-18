@@ -13,7 +13,7 @@ function Home() {
         <p className="flex flex-col justify-center items-center"> <FcAssistant />Contact</p>
       </div>
       <div className="w-full md:w-[92%] ">
-        <div className="m-3 rounded-xl bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 p-6">
+        <div className="m-3 rounded-xl bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 p-6 shadow-md">
           <h1 className="text-2xl sm:text-6xl py-4
                          text-transparent font-bold bg-clip-text
                          bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
@@ -32,18 +32,18 @@ function Home() {
             </div>
         </div>
 
-        <div class="m-3 rounded-xl p-6 bg-gray-50">
+        <div class="m-3 rounded-xl p-6 bg-gray-50 shadow-md">
           <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
             <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               <span class="block">Ready to dive in?</span>
-              <span class="block text-indigo-600">Start your free trial today.</span>
+              <span class="block text-indigo-600">Start to contact me</span>
             </h2>
             <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
               <div class="inline-flex rounded-md shadow">
-                <p class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700">Get started</p>
+                <p class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700">Contact</p>
               </div>
               <div class="ml-3 inline-flex rounded-md shadow">
-                <p class="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-indigo-600 hover:bg-indigo-50">Learn more</p>
+                <p class="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-indigo-600 hover:bg-indigo-50">Visite my portfilios</p>
               </div>
           </div>
         </div>
