@@ -5,41 +5,41 @@ import { FcAbout, FcAssistant, FcHome, FcNews } from "react-icons/fc";
 
 function Home() {
   return (
-    <div className='flex w-full h-full'>
-      <div className="hidden w-[8%] m-3 md:flex flex-col items-center justify-around border-b border-blue-500">
+    <div className='flex w-full h-screen'>
+      <div className="hidden w-[8%] m-3 md:flex flex-col items-center justify-around">
         <p className="">
-          <p className="flex flex-col justify-center items-center"> <FcHome />Home</p>
-          <p className="flex flex-col justify-center items-center"> <FcAbout />About</p>
-          <p className="flex flex-col justify-center items-center"> <FcNews />Blog</p>
-          <p className="flex flex-col justify-center items-center"> <FcAssistant />Contact</p>
+          <p className="flex flex-col justify-center items-center pb-5"> <FcHome className='text-3xl' />Home</p>
+          <p className="flex flex-col justify-center items-center pb-5"> <FcAbout className='text-3xl' />About</p>
+          <p className="flex flex-col justify-center items-center pb-5"> <FcNews className='text-3xl' />Blog</p>
+          <p className="flex flex-col justify-center items-center"> <FcAssistant className='text-3xl' />Contact</p>
         </p>
-        <p className="">
+        <p className="text-2xl ">
           <a
               href="https://www.linkedin.com/in/mr-nguyen-coder-27a744254/"
               rel='noreferrer' target="_blank"
-              className="text-[#0e76a8] hover:text-blue-500 mx-4"
+              className="text-[#0e76a8] hover:text-[#61dbfb]"
             >
               <FiLinkedin className=""></FiLinkedin>
             </a>
             <a
               href="https://github.com/mrnguyencoder"
               rel='noreferrer' target="_blank"
-              className="text-gray-700 hover:text-blue-500 mx-4"
+              className="text-[#171515] hover:text-[#61dbfb] pb-5"
             >
               <FiGithub className=""></FiGithub>
             </a>
             <a
               href="https://www.instagram.com/mrnguyencoder/"
               rel='noreferrer' target="_blank"
-              className="text-gray-700 hover:text-blue-500 mx-4"
+              className="text-[#962fbf] hover:text-[#61dbfb] pb-5"
             >
-              <FiInstagram className="text-3xl"></FiInstagram>
+              <FiInstagram className=""></FiInstagram>
             </a>    
         </p>
       </div>
       <div className="w-full md:w-[92%] ">
-        <div className="container mx-auto
-                        bg-gradient-to-r from-[#f0db4f] to-[#61dbfb]
+        <div className="container
+                        bg-gradient-to-r from-[#61dbfb] to-[#f0db4f]
                         m-3 p-6 shadow-md rounded-xl
         ">
           <p className="text-5xl text-[#3C873A] font-bold text-center mb-6">Welcome to My Site</p>
