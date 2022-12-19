@@ -7,10 +7,35 @@ function Home() {
   return (
     <div className='flex w-full h-full'>
       <div className="hidden w-[8%] m-3 md:flex flex-col items-center justify-around border-b border-blue-500">
-        <p className="flex flex-col justify-center items-center"> <FcHome />Home</p>
-        <p className="flex flex-col justify-center items-center"> <FcAbout />About</p>
-        <p className="flex flex-col justify-center items-center"> <FcNews />Blog</p>
-        <p className="flex flex-col justify-center items-center"> <FcAssistant />Contact</p>
+        <p className="">
+          <p className="flex flex-col justify-center items-center"> <FcHome />Home</p>
+          <p className="flex flex-col justify-center items-center"> <FcAbout />About</p>
+          <p className="flex flex-col justify-center items-center"> <FcNews />Blog</p>
+          <p className="flex flex-col justify-center items-center"> <FcAssistant />Contact</p>
+        </p>
+        <p className="">
+          <a
+              href="https://www.linkedin.com/in/mr-nguyen-coder-27a744254/"
+              rel='noreferrer' target="_blank"
+              className="text-[#0e76a8] hover:text-blue-500 mx-4"
+            >
+              <FiLinkedin className=""></FiLinkedin>
+            </a>
+            <a
+              href="https://github.com/mrnguyencoder"
+              rel='noreferrer' target="_blank"
+              className="text-gray-700 hover:text-blue-500 mx-4"
+            >
+              <FiGithub className=""></FiGithub>
+            </a>
+            <a
+              href="https://www.instagram.com/mrnguyencoder/"
+              rel='noreferrer' target="_blank"
+              className="text-gray-700 hover:text-blue-500 mx-4"
+            >
+              <FiInstagram className="text-3xl"></FiInstagram>
+            </a>    
+        </p>
       </div>
       <div className="w-full md:w-[92%] ">
         <div className="container mx-auto
