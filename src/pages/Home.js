@@ -6,14 +6,17 @@ import { FcAbout, FcAssistant, FcHome, FcNews } from "react-icons/fc";
 function Home() {
   return (
     <div className='flex w-full h-screen'>
-      <div className="hidden w-[8%] m-3 md:flex flex-col items-center justify-around">
-        <p className="">
-          <p className="flex flex-col justify-center items-center pb-5"> <FcHome className='text-3xl' />Home</p>
-          <p className="flex flex-col justify-center items-center pb-5"> <FcAbout className='text-3xl' />About</p>
-          <p className="flex flex-col justify-center items-center pb-5"> <FcNews className='text-3xl' />Blog</p>
-          <p className="flex flex-col justify-center items-center"> <FcAssistant className='text-3xl' />Contact</p>
-        </p>
-        <p className="text-2xl ">
+      
+      {/* nav sidebar from medium min-width 768px breakpoints */}
+      <div className="hidden w-[8%] m-3 md:flex flex-col items-center justify-evenly">
+        <div className="">
+          <a href="#" className="flex flex-col justify-center items-center pb-5"> <FcHome className='text-3xl' />Home</a>
+          <a href="#" className="flex flex-col justify-center items-center pb-5"> <FcAbout className='text-3xl' />About</a>
+          <a href="#" className="flex flex-col justify-center items-center pb-5"> <FcNews className='text-3xl' />Blog</a>
+          <a href="#" className="flex flex-col justify-center items-center"> <FcAssistant className='text-3xl' />Contact</a>
+        </div>
+
+        <div className="text-2xl flex flex-col gap-5">
           <a
               href="https://www.linkedin.com/in/mr-nguyen-coder-27a744254/"
               rel='noreferrer' target="_blank"
@@ -24,20 +27,23 @@ function Home() {
             <a
               href="https://github.com/mrnguyencoder"
               rel='noreferrer' target="_blank"
-              className="text-[#171515] hover:text-[#61dbfb] pb-5"
+              className="text-[#171515] hover:text-[#61dbfb]"
             >
               <FiGithub className=""></FiGithub>
             </a>
             <a
               href="https://www.instagram.com/mrnguyencoder/"
               rel='noreferrer' target="_blank"
-              className="text-[#962fbf] hover:text-[#61dbfb] pb-5"
+              className="text-[#962fbf] hover:text-[#61dbfb]"
             >
               <FiInstagram className=""></FiInstagram>
             </a>    
-        </p>
+        </div>
       </div>
+
+
       <div className="w-full md:w-[92%] ">
+
         <div className="container
                         bg-gradient-to-r from-[#61dbfb] to-[#f0db4f]
                         m-3 p-6 shadow-md rounded-xl
@@ -50,41 +56,9 @@ function Home() {
             Base in Paris, make code with love
           </p>
 
-      <div className="container mx-auto py-6">
-        <div className="flex justify-center mb-6">
-     
-          <a
-            href="https://www.linkedin.com/in/mr-nguyen-coder-27a744254/"
-            rel='noreferrer' target="_blank"
-            className="text-[#0e76a8] hover:text-blue-500 mx-4"
-          >
-            <FiLinkedin className=""></FiLinkedin>
-          </a>
-          <a
-            href="https://github.com/mrnguyencoder"
-            rel='noreferrer' target="_blank"
-            className="text-gray-700 hover:text-blue-500 mx-4"
-          >
-            <FiGithub className=""></FiGithub>
-          </a>
-          <a
-            href="https://www.instagram.com/mrnguyencoder/"
-            rel='noreferrer' target="_blank"
-            className="text-gray-700 hover:text-blue-500 mx-4"
-          >
-            <FiInstagram className="text-3xl"></FiInstagram>
-          </a>
-        </div>
-
-      </div>
-          <div className="">
-            <a className="bg-[#61dbfb] text-white font-bold py-2 px-4 rounded" href="mailto:mr.nguyencoder@gmail.com">Send me an email</a>
-          </div>
-        </div>
-
         
 
-        <div className="m-3 rounded-xl p-6 bg-gray-50 shadow-md">
+        {/* <div className="m-3 rounded-xl p-6 bg-gray-50 shadow-md">
           <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               <span className="block">Ready to dive in?</span>
@@ -92,20 +66,50 @@ function Home() {
             </h2>
             <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
               <div className="inline-flex rounded-md shadow">
-                <p className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700">Contact</p>
+                <p className="inline-flex items-center justify-center rounded-md border border-transparent bg-[hsl(205.1,100%,36.1%)] px-5 py-3 text-base font-medium text-white hover:bg-indigo-700">Contact</p>
               </div>
               <div className="ml-3 inline-flex rounded-md shadow">
                 <p className="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-indigo-600 hover:bg-indigo-50">Visite my portfilios</p>
               </div>
           </div>
-        </div>
+        </div> */}
       </div>
+
+
+    
+
+
 
 
 
     </div>
       
     </div>
+
+  //   <div className="flex flex-col min-h-screen bg-gray-200">
+  //   <header className="bg-white flex items-center justify-between p-4">
+  //     <div className="text-xl font-bold">My Portfolio</div>
+  //     <nav className="flex items-center">
+  //       <a className="mx-2 text-gray-700 hover:text-gray-900" href="#">Home</a>
+  //       <a className="mx-2 text-gray-700 hover:text-gray-900" href="#">About</a>
+  //       <a className="mx-2 text-gray-700 hover:text-gray-900" href="#">Projects</a>
+  //       <a className="mx-2 text-gray-700 hover:text-gray-900" href="#">Contact</a>
+  //     </nav>
+  //   </header>
+  //   <main className="container mx-auto px-4 mt-8">
+  //     <div className="flex flex-col items-center">
+  //       <img className="w-32 h-32 rounded-full mb-4" src="https://via.placeholder.com/150" alt="Profile picture" />
+  //       <h1 className="text-3xl font-bold mb-2">John Doe</h1>
+  //       <p className="text-xl text-gray-700 mb-8">Software Developer</p>
+  //       <p className="text-lg text-gray-700 mb-8">Welcome to my portfolio website! Here you can find out more about me, my skills and experience, and the projects I've worked on.</p>
+  //     </div>
+  //   </main>
+  //   <footer className="bg-white py-4 mt-8">
+  //     <div className="container mx-auto px-4 text-center text-gray-700">
+  //       &copy; 2021 John Doe. All rights reserved.
+  //     </div>
+  //   </footer>
+  // </div>
   )
 }
 
