@@ -10,10 +10,10 @@ function Home() {
       {/* nav sidebar from medium min-width 768px breakpoints */}
       <div className="hidden w-[8%] m-3 md:flex flex-col items-center justify-evenly">
         <div className="">
-          <a href="#" className="flex flex-col justify-center items-center pb-5"> <FcHome className='text-3xl' />Home</a>
-          <a href="#" className="flex flex-col justify-center items-center pb-5"> <FcAbout className='text-3xl' />About</a>
-          <a href="#" className="flex flex-col justify-center items-center pb-5"> <FcNews className='text-3xl' />Blog</a>
-          <a href="#" className="flex flex-col justify-center items-center"> <FcAssistant className='text-3xl' />Contact</a>
+          <a href="#" rel='noreferrer' className="flex flex-col justify-center items-center gap-2 pb-5"> <FcHome className='text-3xl' />Home</a>
+          <a href="#" rel='noreferrer' className="flex flex-col justify-center items-center gap-2 pb-5"> <FcAbout className='text-3xl' />About</a>
+          <a href="#" rel='noreferrer' className="flex flex-col justify-center items-center gap-2 pb-5"> <FcNews className='text-3xl' />Blog</a>
+          <a href="#" rel='noreferrer' className="flex flex-col justify-center items-center gap-2"> <FcAssistant className='text-3xl' />Contact</a>
         </div>
 
         <div className="text-2xl flex flex-col gap-5">
@@ -41,7 +41,7 @@ function Home() {
         </div>
       </div>
 
-
+      {/* main right home  */}
       <div className="w-full md:w-[92%] ">
 
         <div className="container
@@ -49,41 +49,21 @@ function Home() {
                         m-3 p-6 shadow-md rounded-xl
         ">
           <p className="text-5xl text-[#3C873A] font-bold text-center mb-6">Welcome to My Site</p>
-          <p className="text-3xl text-center text-blue-800 mb-4">
+          <p className="text-3xl text-center text-blue-800 mb-4 ">
             Front-end Dev 
           </p>
-          <p className="text-xl text-center text-blue-600 mb-4">
+          <p className="text-xl text-center text-blue-600 mb-4 font-[Poppins]">
             Base in Paris, make code with love
           </p>
+        </div>
 
+        <div className="">
         
-
-        {/* <div className="m-3 rounded-xl p-6 bg-gray-50 shadow-md">
-          <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              <span className="block">Ready to dive in?</span>
-              <span className="block text-indigo-600">Start to contact me</span>
-            </h2>
-            <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-              <div className="inline-flex rounded-md shadow">
-                <p className="inline-flex items-center justify-center rounded-md border border-transparent bg-[hsl(205.1,100%,36.1%)] px-5 py-3 text-base font-medium text-white hover:bg-indigo-700">Contact</p>
-              </div>
-              <div className="ml-3 inline-flex rounded-md shadow">
-                <p className="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-indigo-600 hover:bg-indigo-50">Visite my portfilios</p>
-              </div>
-          </div>
-        </div> */}
-      </div>
-
-
-    
+        </div>
 
 
 
-
-
-    </div>
-      
+      </div>  
     </div>
 
   //   <div className="flex flex-col min-h-screen bg-gray-200">
