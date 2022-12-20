@@ -1,9 +1,19 @@
 import React from 'react';
 import { FiLinkedin, FiGithub, FiInstagram } from 'react-icons/fi';
 import { FcAbout, FcAssistant, FcHome, FcNews } from "react-icons/fc";
+import { Typewriter, Cursor, useTypewriter } from 'react-simple-typewriter';
 
 
 function Home() {
+  const [text, count ] = useTypewriter({
+    words: [
+      'Vietnamese dev in Paris  ',
+      'JavaScript, React and more...',
+      '<happy coding>',
+    ],
+    loop: true,
+    delaySpeed: 2000,
+  });
   return (
     <div className='flex w-full h-screen'>
       
@@ -58,7 +68,10 @@ function Home() {
         </div>
 
         <div className="">
-        
+          <p className="">
+            <span>{ text }</span>
+            <Cursor />
+          </p>
         </div>
 
 
