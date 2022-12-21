@@ -1,7 +1,8 @@
 import React from 'react';
 import { FiLinkedin, FiGithub, FiInstagram } from 'react-icons/fi';
 import { FcAbout, FcAssistant, FcHome, FcNews } from "react-icons/fc";
-import { Typewriter, Cursor, useTypewriter } from 'react-simple-typewriter';
+import { Cursor, useTypewriter } from 'react-simple-typewriter';
+import Icon from '../assets/iconnguyencoder.png';
 
 
 function Home() {
@@ -67,11 +68,33 @@ function Home() {
           </p>
         </div>
 
-        <div className="">
-          <p className="">
+        <div className="
+                        flex flex-col justify-center items-center
+                        text-center overflow-hidden
+                         
+                        ">
+          {/* make circles */}
+          <div className="
+                flex flex-col justify-center items-center
+                mt-52 relative
+                ">
+            <img src={Icon} alt="icon nguyencoder" className='h-32 w-32 mx-auto object-cover' />
+            <div className="
+                border border-[#61dbfb] rounded-full
+                h-[00px] w-[100px] animate-ping absolute"></div>
+            <div className="
+                border border-[#3C873A] rounded-full
+                h-[200px] w-[200px] animate-ping absolute"></div>
+            <div className="
+                border border-[#f0db4f] rounded-full
+                h-[400px] w-[400px] animate-pulse absolute"></div>
+            <p className="text-xl text-sky-500 ">
             <span>{ text }</span>
-            <Cursor />
+            <Cursor cursorColor='#61dbfb' />
           </p>
+          </div>
+
+          
         </div>
 
 
