@@ -63,7 +63,7 @@ function Navbar() {
                 duration:1.5,
             }}
         >
-            <Link className={style.link} to="/about">About</Link>
+            <Link className={style.link} to="/">Home</Link>
             <Link className={style.link} to="/projects">Projects</Link>
             <Link className={style.link} to="/contact">Contact</Link>
         </motion.div>
@@ -90,7 +90,7 @@ function Navbar() {
             ? 'hidden'
             : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
         }>
-            <Link onClick={handleClick} className='flex text-4xl py-10 duration-500' to="/about"><HiOutlineCursorArrowRays className='pr-2'/>About</Link>
+            <Link onClick={handleClick} className='flex text-4xl py-10 duration-500' to="/"><HiOutlineCursorArrowRays className='pr-2'/>Home</Link>
             <Link onClick={handleClick} className='flex text-4xl py-10 duration-500' to="/projects">Projects<HiShoppingCart className='pl-2'/></Link>
             <Link onClick={handleClick} className='flex text-4xl py-10 duration-500' to="/contact">Contact<HiOutlineChatBubbleOvalLeftEllipsis className='pl-2'/></Link>
 
