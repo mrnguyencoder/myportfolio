@@ -20,8 +20,8 @@ function Contact() {
       }}
     >
      <div className="flex flex-col space-y-10 text-center">
-      <p className="text-4xl text-amber-400 pt-8 underline">
-        Contact me to get started</p>
+      <h2 className="text-4xl text-amber-400 pt-8 underline">
+        Contact me to get started</h2>
         <div className="space-y-10">
           <div className="flex items-center space-x-5 justify-center">
             <FaPhoneVolume className='h-7 w-7 animate-pulse' />

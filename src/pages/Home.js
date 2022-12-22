@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FiLinkedin, FiGithub, FiInstagram, FiChevronUp } from 'react-icons/fi';
-import { FcAbout, FcAssistant, FcHome, FcNews } from "react-icons/fc";
+import { FcAssistant, FcHome, FcNews } from "react-icons/fc";
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import Icon from '../assets/iconnguyencoder.png';
 import { Disclosure } from '@headlessui/react';
-import { SiCss3, SiExpress, SiFirebase, SiFreecodecamp, SiGithub, SiGraphql, SiHtml5, SiJavascript, SiMongodb, SiMysql, SiNodedotjs, SiNodemon, SiPhp, SiPhpmyadmin, SiReact, SiTailwindcss, SiVsco } from "react-icons/si";
+import { SiCss3, SiFirebase, SiFreecodecamp, SiGithub, SiGraphql, SiHtml5, SiJavascript, SiMongodb, SiMysql, SiNodedotjs, SiReact, SiTailwindcss } from "react-icons/si";
+import { motion } from "framer-motion";
 
 
 
@@ -21,16 +23,15 @@ function Home() {
   });
   return (
     <div className='flex w-full h-screen '>
-      
       {/* nav sidebar from medium min-width 768px breakpoints */}
       <div className="hidden w-[8%] m-3 md:flex flex-col items-center justify-evenly">
         <div className="">
-          <a href="" rel='noreferrer' className="flex flex-col justify-center items-center gap-2 pb-5"> <FcHome className='text-3xl' />Home</a>
-          <a href="" rel='noreferrer' className="flex flex-col justify-center items-center gap-2 pb-5"> <FcNews className='text-3xl' />Projects</a>
-          <a href="" rel='noreferrer' className="flex flex-col justify-center items-center gap-2"> <FcAssistant className='text-3xl' />Contact</a>
+          <Link className="flex flex-col justify-center items-center gap-2 pb-5" to="/"><FcHome className='text-3xl' />Home</Link>
+          <Link className="flex flex-col justify-center items-center gap-2 pb-5" to="/projects"><FcNews className='text-3xl' />Projects</Link>
+          <Link className="flex flex-col justify-center items-center gap-2" to="/contact"><FcAssistant className='text-3xl' />Contact</Link>
         </div>
 
-        <div className="text-2xl flex flex-col gap-5">
+        <div className="text-2xl flex flex-col gap-10">
           <a
               href="https://www.linkedin.com/in/mr-nguyen-coder-27a744254/"
               rel='noreferrer' target="_blank"
@@ -61,27 +62,56 @@ function Home() {
         <div className="bg-gradient-to-r from-[#61dbfb] to-[#f0db4f]
                         m-3 p-6 shadow-md rounded-xl
         ">
-          <p className="text-5xl text-[#3C873A] font-bold text-center mb-6">Welcome to My Site</p>
-          <h1 className="text-3xl text-center text-blue-800 mb-4 ">
-          Nguyen Coder | Software Developer 
-          </h1>
-          <p className="text-xl text-center text-blue-600 mb-4 font-[Poppins]">
-          Welcome to my portfolio website! Here you can find out more about me, my skills and the projects I've worked on.
+          <motion.h1 className="flex flex-col animate-pulse text-4xl text-center text-[#3C873A] mb-4 md:text-5xl lg:text-6xl "
+            initial={{
+              x: -500,
+              opacity: 0,
+              scale: 0.5
+            }}
+            animate={{
+                x:0,
+                opacity:1,
+                scale:1
+            }}
+            transition={{
+                duration:1.5,
+            }}
+          >
+            Nguyen Coder
+            <span className='pt-4'>Software Developer </span>
+          </motion.h1>
+          <p className="flex flex-col text-xl md:text-2xl lg:text-3xl text-center text-blue-600 mb-4 font-[Poppins]">
+            <span className='pb-3'>Welcome to my portfolio website!</span> 
+          Here you can find out more about me, my skills and the projects I've worked on.
           </p>
         </div>
 
-        <div className="m-3 p-6 shadow-md rounded-xl">
+        <motion.div className="m-3 p-6 rounded"
+            initial={{
+              x: 500,
+              opacity: 0,
+              scale: 0.5
+            }}
+            animate={{
+                x:0,
+                opacity:1,
+                scale:1
+            }}
+            transition={{
+                duration:1.5,
+            }}
+        >
             <div className="flex flex-col justify-center items-center gap-4">
               <img src={Icon} alt="icon nguyencoder" className='h-20' />
-              <p className="text-3xl text-sky-500 ">
+              <p className="text-xl md:text-3xl lg:text-4xl  text-sky-500 ">
               <span>{ text }</span>
               <Cursor cursorColor='#61dbfb' />
               </p>
             </div>
-        </div>
+        </motion.div>
 
 
-        <div className="m-3 p-6 shadow-md rounded-xl">
+        <div className="m-3 p-6 shadow-sm rounded">
           <div className='mx-auto w-full rounded-2xl bg-white p-2'>
           <Disclosure>
           {({ open }) => (
@@ -140,14 +170,10 @@ function Home() {
           
         </div>
 
-        <div className="m-3 p-6 shadow-md rounded-xl ">
-          <div className="">
-            <p className="text-xl text-blue-400">My Skills:</p>
-            <div className=""></div>
-          </div>
+        <div className="m-3 p-6 shadow-sm rounded ">
           <div className="flex justify-center items-center">
             <div className="grid grid-cols-4 gap-16
-                            cursor-pointer text-6xl
+                            cursor-pointer text-4xl md:text-6xl lg:text-8xl
                             ">
               <SiHtml5 className='text-[#e34c26]' />
               <SiCss3 className='text-[#264de4]'/>
