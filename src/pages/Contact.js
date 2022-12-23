@@ -48,7 +48,7 @@ function Contact() {
         <form 
             onSubmit={onSubmit}
             target="_blank"
-            action='https://formsubmit.co/mr.nguyencoder@gmail.com'
+            action='https://formsubmit.co/3fd20610ce2a23eac59b14e2cae78922'
             method='POST'
             className="flex flex-col space-y-2 w-fit mx-auto"
         >  
