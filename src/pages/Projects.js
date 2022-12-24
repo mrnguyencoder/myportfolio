@@ -4,27 +4,27 @@ function Projects() {
   return (
     <section className="font-[Poppins]">
       <div className="container mx-auto">
-        <h2 className="text-4xl text-amber-400 underline py-8 text-center">Projects</h2>
-        <div className="flex">
+        <h2 className="text-2xl md:text-4xl text-amber-400 underline py-8 text-center">Projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md-gap-10">
 
-          <div className="w-full md:w-1/2 px-2 mb-4">
-            <div className="bg-white rounded-lg shadow-md p-6">
+          <div className="">
+            <div className="rounded-lg shadow-md p-6">
               <h3 className="text-2xl text-[#61dbfb] mb-4">Project 1</h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 my-6 space-y-1">
                 <p>Name: Une main Tendue</p>
                 <p>Used: HTML5, CSS, JavaScript</p>
-                <p>Plus: CEO</p>
+                <p>Plus: CEO, google map, </p>
               </p>
               <div className="flex justify-between">
                 <a
                   href="https://unemaintendue-conseils.fr/"
-                  className="animate-bounce inline-block py-2 px-4 rounded bg-indigo-500 text-white font-bold hover:bg-indigo-600"
+                  className="animate-pulse py-2 px-4 rounded bg-indigo-500 text-white font-bold hover:bg-indigo-600"
                 >
                   Live demo
                 </a>
                 <a
                   href="#"
-                  className="inline-block py-2 px-4 rounded border border-slate-300 hover:border-slate-400 "
+                  className="py-2 px-4 rounded border border-slate-300 hover:border-slate-400 "
                 >
                   Source code
                 </a>
@@ -32,24 +32,24 @@ function Projects() {
             </div>
           </div>
 
-          <div className="w-full md:w-1/2 px-2 mb-4">
-            <div className="bg-white rounded-lg shadow-md p-6">
+          <div className="">
+            <div className="rounded-lg shadow-md p-6">
               <h3 className="text-2xl text-[#61dbfb] mb-4">Project 2</h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 my-6 space-y-1">
               <p>Name: Nguyen coder</p>
                 <p>Used: React</p>
-                <p>Dependencies: framer-motion,router-dom,simple-typewriter,icons</p>
+                <p>Dependencies: framer-motion, router-dom, simple-typewriter, icons</p>
               </p>
               <div className="flex justify-between">
                 <a
                   href="https://github.com/mrnguyencoder/myportfolio"
-                  className="inline-block py-2 px-4 rounded border border-slate-300 hover:border-slate-400 "
+                  className="py-2 px-4 rounded border border-slate-300 hover:border-slate-400 "
                 >
                   Source code
                 </a>
                 <a
                   href="#"
-                  className="animate-bounce inline-block py-2 px-4 rounded bg-indigo-500 text-white font-bold hover:bg-indigo-600"
+                  className="animate-pulse py-2 px-4 rounded bg-indigo-500 text-white font-bold hover:bg-indigo-600"
                 >
                   Live demo
                 </a>

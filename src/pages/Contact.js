@@ -18,7 +18,7 @@ function Contact() {
   };
 
   return (
-    <motion.section className='p-3'
+    <motion.section className='m-6'
       initial="hidden"
       whileInView="visible"
       viewport={{ one: true, amount: 0.5 }}
@@ -28,21 +28,21 @@ function Contact() {
         visible: { opacity: 1, x: 0},
       }}
     >
-     <div className="flex flex-col space-y-10 text-center">
-      <h2 className="text-4xl text-amber-400 pt-8 underline">
+     <div className="flex flex-col text-center space-y-8">
+      <h2 className="text-xl md:text-2xl lg:text-4xl text-amber-400 underline">
         Contact me to get started</h2>
-        <div className="space-y-10">
-          <div className="flex items-center space-x-5 justify-center">
-            <FaPhoneVolume className='max-h-7 max-w-7 animate-pulse' />
-            <p className="text-2xl">+33-782885224</p>
+        <div className="space-y-3">
+          <div className="flex justify-center items-center space-x-3">
+            <FaPhoneVolume className='max-h-7 max-w-7 animate-bounce' />
+            <p className="text-xl md:text-2xl lg:text-3xl">+33-782885224</p>
           </div>
-          <div className="flex items-center space-x-5 justify-center">
-            <SiGmail className='max-h-7 max-w-7 animate-pulse'/>
-            <p className="text-2xl">mr.nguyencoder@gmail.com</p>
+          <div className="flex justify-center items-center space-x-3">
+            <SiGmail className='max-h-7 max-w-7 animate-pulse '/>
+            <p className="text-xl md:text-2xl lg:text-3xl">  mr.nguyencoder@gmail.com</p>
           </div>
-          <div className="flex items-center space-x-5 justify-center">
-            <FaAddressCard className='max-h-7 max-w-7 animate-pulse'/>
-            <p className="text-2xl">Paris, France</p>
+          <div className="flex justify-center items-center space-x-3">
+            <FaAddressCard className='animate-pulse '/>
+            <p className="text-xl md:text-2xl lg:text-3xl">  Paris, France</p>
           </div>
         </div>
         <form 
@@ -50,9 +50,8 @@ function Contact() {
             target="_blank"
             action='https://formsubmit.co/3fd20610ce2a23eac59b14e2cae78922'
             method='POST'
-            className="flex flex-col space-y-2 w-fit mx-auto"
+            className="flex flex-col space-y-4"
         >  
-          <div className='flex space-x-2'>
             <input placeholder='Name' 
                    className='outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-amber-300 text-gray-500 transition-all focus:border-amber-500 focus:text-gray-800' 
                    type="text"
@@ -81,7 +80,6 @@ function Contact() {
                 {errors.email.type === "pattern" && "Invalid email address."}
               </p>
             )}
-          </div>
           <input placeholder='Subject' 
                  className='outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-amber-300 text-gray-500 transition-all focus:border-amber-500 focus:text-gray-800' 
                  type="text"

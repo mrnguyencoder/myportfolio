@@ -49,13 +49,13 @@ function Navbar() {
         >
             <Link className="mx-3 md:mx-4 xl:mx-6
                             hover-text-blue-400
-                            text-sm text-white md:text-lg xl:text-xl" to="/">Home</Link>
+                            text-xs text-white md:text-lg xl:text-xl" to="/">Home</Link>
             <Link className="mx-3 md:mx-4 xl:mx-6
                             hover-text-blue-400
-                            text-sm text-white md:text-lg xl:text-xl" to="/projects">Projects</Link>
+                            text-xs text-white md:text-lg xl:text-xl" to="/projects">Projects</Link>
             <Link className="mx-3 md:mx-4 xl:mx-6
                             hover-text-blue-400
-                            text-sm text-white md:text-lg xl:text-xl" to="/contact">Contact</Link>
+                            text-xs text-white md:text-lg xl:text-xl" to="/contact">Contact</Link>
         </motion.div>
 
     </nav>

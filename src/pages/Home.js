@@ -60,9 +60,9 @@ function Home() {
       <div className="w-full md:w-[92%] ">
 
         <div className="bg-gradient-to-r from-[#61dbfb] to-[#f0db4f]
-                        m-3 p-6 shadow-md rounded-xl
+                        m-3 p-6 shadow-md rounded-xl space-y-3
         ">
-          <motion.h1 className="flex flex-col animate-pulse text-4xl text-center text-[#3C873A] mb-4 md:text-5xl lg:text-6xl "
+          <motion.h1 className="flex flex-col animate-pulse text-xl md:text-4xl lg:text-6xl text-center text-[#3C873A]  "
             initial={{
               x: -500,
               opacity: 0,
@@ -78,15 +78,15 @@ function Home() {
             }}
           >
             Nguyen Coder
-            <span className='pt-4'>Software Developer </span>
+            <span className=''>Software Developer </span>
           </motion.h1>
-          <p className="flex flex-col text-xl md:text-2xl lg:text-3xl text-center text-blue-600 mb-4 font-[Poppins]">
-            <span className='pb-3'>Welcome to my portfolio website!</span> 
+          <p className="flex flex-col text-base md:text-2xl lg:text-3xl text-center text-blue-600 mb-4 font-[Poppins]">
+            <span className=''>Welcome to my portfolio website!</span> 
           Here you can find out more about me, my skills and the projects I've worked on.
           </p>
         </div>
 
-        <motion.div className="m-3 p-6 rounded"
+        <motion.div className=""
             initial={{
               x: 500,
               opacity: 0,
@@ -111,18 +111,18 @@ function Home() {
         </motion.div>
 
 
-        <div className="m-3 p-6 shadow-sm rounded">
+        <div className="m-3 p-5 shadow-sm rounded">
           <div className='mx-auto w-full rounded-2xl bg-white p-2'>
           <Disclosure>
           {({ open }) => (
           <>
             <Disclosure.Button className="flex w-full justify-between rounded-lg bg-sky-100 px-4 py-2 text-left text-sm font-medium text-sky-900 hover:bg-sky-200 focus:outline-none focus-visible:ring focus-visible:ring-sky-500 focus-visible:ring-opacity-75">
-              <p>What I can do?</p>
+              <p className='text-base lg:text-xl'>What I can do?</p>
               <FiChevronUp className={`${
                     open ? 'rotate-180 transform' : ''
                   } text-3xl text-green-500`}/>
             </Disclosure.Button>
-            <Disclosure.Panel className="text-gray-500 p-4">
+            <Disclosure.Panel className="text-gray-500 p-4 text-sm lg:text-xl">
               I create and maintain websites. I am also responsible for the site's technical aspects, such as its performance and capacity, which are measures of a website's speed and how much traffic the site can handle. In addition, I may create content for the site.
             </Disclosure.Panel>
           </>
@@ -133,12 +133,12 @@ function Home() {
           {({ open }) => (
           <>
             <Disclosure.Button className="mt-3 flex w-full justify-between rounded-lg bg-sky-100 px-4 py-2 text-left text-sm font-medium text-sky-900 hover:bg-sky-200 focus:outline-none focus-visible:ring focus-visible:ring-sky-500 focus-visible:ring-opacity-75">
-              <p>How I build a web app ?</p>
+              <p className='text-base lg:text-xl'>How I build a web app ?</p>
               <FiChevronUp className={`${
                     open ? 'rotate-180 transform' : ''
                   } text-3xl text-green-500`}/>
             </Disclosure.Button>
-            <Disclosure.Panel className="text-gray-500 p-4">
+            <Disclosure.Panel className="text-gray-500 p-4 text-sm lg:text-xl">
               <p>VS code, GitHub</p>
               <p>HTML5, CSS3- Tailwind , JavaScrips - React</p>
               <p>Basic MERN stack MongoDB, Express, React, Node </p>
@@ -152,12 +152,12 @@ function Home() {
           {({ open }) => (
           <>
             <Disclosure.Button className="mt-3 flex w-full justify-between rounded-lg bg-sky-100 px-4 py-2 text-left text-sm font-medium text-sky-900 hover:bg-sky-200 focus:outline-none focus-visible:ring focus-visible:ring-sky-500 focus-visible:ring-opacity-75">
-              <p>Why me?</p>
+              <p className='text-base lg:text-xl'>Why me?</p>
               <FiChevronUp className={`${
                     open ? 'rotate-180 transform' : ''
                   } text-3xl text-green-500`}/>
             </Disclosure.Button>
-            <Disclosure.Panel className="text-gray-500 p-4">
+            <Disclosure.Panel className="text-gray-500 p-4 text-sm lg:text-xl">
               <p>Yes, there are a tons of huge developer in the market</p>
               <p>Let contact me first then we can figure out how we can work together!</p>
             </Disclosure.Panel>
