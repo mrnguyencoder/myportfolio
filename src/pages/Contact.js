@@ -34,11 +34,13 @@ function Contact() {
         <div className="space-y-3">
           <div className="flex justify-center items-center space-x-3">
             <FaPhoneVolume className='max-h-7 max-w-7 animate-bounce' />
-            <p className="text-xl md:text-2xl lg:text-3xl">+33-782885224</p>
+            <a href="tel:33782885224"
+            className="text-xl md:text-2xl lg:text-3xl">+33-782885224</a>
           </div>
           <div className="flex justify-center items-center space-x-3">
             <SiGmail className='max-h-7 max-w-7 animate-pulse '/>
-            <p className="text-xl md:text-2xl lg:text-3xl">  mr.nguyencoder@gmail.com</p>
+            <a href="mailto:mr.nguyencoder@gmail.com"
+               className="text-xl md:text-2xl lg:text-3xl">  mr.nguyencoder@gmail.com</a>
           </div>
           <div className="flex justify-center items-center space-x-3">
             <FaAddressCard className='animate-pulse '/>
@@ -50,7 +52,7 @@ function Contact() {
             target="_blank"
             action='https://formsubmit.co/3fd20610ce2a23eac59b14e2cae78922'
             method='POST'
-            className="flex flex-col space-y-4"
+            className="flex flex-col space-y-4 justify-center px-2 md:px-4 lg:px-16 xl:px-26 "
         >  
             <input placeholder='Name' 
                    className='outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-amber-300 text-gray-500 transition-all focus:border-amber-500 focus:text-gray-800' 
