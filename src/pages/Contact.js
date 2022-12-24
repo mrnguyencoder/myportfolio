@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaAddressCard, FaPhoneVolume } from "react-icons/fa";
+import { FaAddressCard, FaPhoneVolume, FaWhatsapp } from "react-icons/fa";
 import { SiGmail } from 'react-icons/si';
 import { motion } from 'framer-motion';
 import { useForm } from "react-hook-form";
@@ -33,17 +33,22 @@ function Contact() {
         Contact me to get started</h2>
         <div className="space-y-3">
           <div className="flex justify-center items-center space-x-3">
-            <FaPhoneVolume className='max-h-7 max-w-7 animate-bounce' />
+            <FaPhoneVolume className='max-h-7 max-w-7 animate-bounce text-fuchsia-500' />
             <a href="tel:33782885224"
             className="text-xl md:text-2xl lg:text-3xl">+33-782885224</a>
           </div>
           <div className="flex justify-center items-center space-x-3">
-            <SiGmail className='max-h-7 max-w-7 animate-pulse '/>
+            <FaWhatsapp className='max-h-7 max-w-7 animate-bounce text-[#25d366]' />
+            <a href="https://wa.me/33782885224"
+            className="text-xl md:text-2xl lg:text-3xl">+33-782885224</a>
+          </div>
+          <div className="flex justify-center items-center space-x-3">
+            <SiGmail className='max-h-7 max-w-7 animate-pulse text-red-600'/>
             <a href="mailto:mr.nguyencoder@gmail.com"
                className="text-xl md:text-2xl lg:text-3xl">  mr.nguyencoder@gmail.com</a>
           </div>
           <div className="flex justify-center items-center space-x-3">
-            <FaAddressCard className='animate-pulse '/>
+            <FaAddressCard className='animate-pulse text-amber-300 '/>
             <p className="text-xl md:text-2xl lg:text-3xl">  Paris, France</p>
           </div>
         </div>
