@@ -89,7 +89,7 @@ function Contact() {
             )}
           <input placeholder='Subject' 
                  className='outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-amber-300 text-gray-500 transition-all focus:border-amber-500 focus:text-gray-800' 
-                 type="text"
+                 type="subject"
                  {...register("subject", {
                   required: true,
                   maxLength: 300,
@@ -106,7 +106,7 @@ function Contact() {
                     className='outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-amber-300 text-gray-500 transition-all focus:border-amber-500 focus:text-gray-800'
                     {...register("message", {
                       required: true,
-                      maxLength: 2000,
+                      maxLength: 3000,
                     })}
                     />
                    {errors.message && (

@@ -158,8 +158,8 @@ function Home() {
                   } text-3xl text-green-500`}/>
             </Disclosure.Button>
             <Disclosure.Panel className="text-gray-500 p-4 text-sm lg:text-xl">
-              <p>Yes, there are a tons of huge developer in the market</p>
-              <p>Let contact me first then we can figure out how we can work together!</p>
+              <p>Yes, there are a tons of huge developers in the market</p>
+              <p>Contact me first, we can figure out how we can work together!</p>
             </Disclosure.Panel>
           </>
             )}
