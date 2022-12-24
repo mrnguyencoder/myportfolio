@@ -24,7 +24,7 @@ function Home() {
   return (
     <div className='flex w-full h-screen '>
       {/* nav sidebar from medium min-width 768px breakpoints */}
-      <div className="hidden w-[8%] m-3 md:flex flex-col items-center justify-evenly">
+      <div className="hidden w-[8%] m-3 md:flex flex-col items-center justify-evenly border-gray-500 ">
         <div className="">
           <Link className="flex flex-col justify-center items-center gap-2 pb-5" to="/"><FcHome className='text-3xl' />Home</Link>
           <Link className="flex flex-col justify-center items-center gap-2 pb-5" to="/projects"><FcNews className='text-3xl' />Projects</Link>
