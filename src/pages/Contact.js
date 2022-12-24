@@ -18,7 +18,7 @@ function Contact() {
   };
 
   return (
-    <motion.section className='container'
+    <motion.section className='p-3'
       initial="hidden"
       whileInView="visible"
       viewport={{ one: true, amount: 0.5 }}
@@ -33,15 +33,15 @@ function Contact() {
         Contact me to get started</h2>
         <div className="space-y-10">
           <div className="flex items-center space-x-5 justify-center">
-            <FaPhoneVolume className='h-7 w-7 animate-pulse' />
+            <FaPhoneVolume className='max-h-7 max-w-7 animate-pulse' />
             <p className="text-2xl">+33-782885224</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
-            <SiGmail className='h-7 w-7 animate-pulse'/>
+            <SiGmail className='max-h-7 max-w-7 animate-pulse'/>
             <p className="text-2xl">mr.nguyencoder@gmail.com</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
-            <FaAddressCard className='h-7 w-7 animate-pulse'/>
+            <FaAddressCard className='max-h-7 max-w-7 animate-pulse'/>
             <p className="text-2xl">Paris, France</p>
           </div>
         </div>
