@@ -185,7 +185,6 @@ function Home() {
               <SiFirebase className='text-[#FFA611]'/>
               <SiMysql className='text-[#00758f]'/>
               <SiNodedotjs className='text-[#215732]'/>
-              <SiFreecodecamp className='text-[#006400]'/>
               <SiMongodb className='text-[#589636]'/>
             </div>
           </div>
