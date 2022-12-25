@@ -18,12 +18,14 @@ function Projects() {
               <div className="flex justify-between">
                 <a
                   href="https://unemaintendue-conseils.fr/"
+                  rel='noreferrer' target="_blank"
                   className="animate-pulse py-2 px-4 rounded bg-indigo-500 text-white font-bold hover:bg-indigo-600"
                 >
                   Live demo
                 </a>
                 <a
                   href="https://github.com/mrnguyencoder/unemaintendue-conseils.fr"
+                  rel='noreferrer' target="_blank"
                   className="py-2 px-4 rounded border border-slate-300 hover:border-slate-400 "
                 >
                   Source code
@@ -43,12 +45,14 @@ function Projects() {
               <div className="flex justify-between">
                 <a
                   href="https://github.com/mrnguyencoder/myportfolio"
+                  rel='noreferrer' target="_blank"
                   className="py-2 px-4 rounded border border-slate-300 hover:border-slate-400 "
                 >
                   Source code
                 </a>
                 <a
-                  href="#"
+                  href="https://nguyencoder.com/"
+                  rel='noreferrer' target="_blank"
                   className="animate-pulse py-2 px-4 rounded bg-indigo-500 text-white font-bold hover:bg-indigo-600"
                 >
                   Live demo
