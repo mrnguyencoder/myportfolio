@@ -23,7 +23,7 @@ function Projects() {
                   Live demo
                 </a>
                 <a
-                  href="#"
+                  href="https://github.com/mrnguyencoder/unemaintendue-conseils.fr"
                   className="py-2 px-4 rounded border border-slate-300 hover:border-slate-400 "
                 >
                   Source code
