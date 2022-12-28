@@ -16,13 +16,13 @@ function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 {/* project1 */}
           <div className="border bg-slate-50 m-3 shadow-md flex flex-col justify-between">
-            <div className="flex flex-col items-center p-8 space-y-5">
+            <div className="flex flex-col items-center p-6 space-y-5 text-center">
               <h3 className="text-3xl text-green-800 font-semibold">Une main Tendue</h3>
-              <div className="text-slate-800 text-base flex flex-col items-center">
+              <div className="text-slate-800 text-base">
                   <p>HTML5, CSS, JavaScript</p>
                   <p>CEO, Search Console, Google Business Profile</p>
               </div>
-              <div className="flex justify-between gap-10">
+              <div className="flex justify-between text-xs gap-10">
                 <a
                   href="https://unemaintendue-conseils.fr/"
                   rel='noreferrer' target="_blank"
@@ -45,13 +45,13 @@ function Projects() {
           </div>
 {/* project2 */}
           <div className="border bg-slate-50 m-3 shadow-md flex flex-col justify-between">
-            <div className="flex flex-col items-center p-8 space-y-5">
+            <div className="flex flex-col items-center p-6 space-y-5 text-center">
               <h3 className="text-3xl text-green-800 font-semibold">Portfolio </h3>
-              <div className="text-slate-800 text-base flex flex-col items-center">
+              <div className="text-slate-800 text-base">
                   <p>React, Tailwind</p>
                   <p>framer-motion, router-dom, hook-form, simple-typewriter, icons</p>
               </div>
-              <div className="flex justify-between gap-10">
+              <div className="flex justify-between gap-10 text-xs">
                 <a
                   href="https://nguyencoder.com/"
                   rel='noreferrer' target="_blank"
@@ -74,13 +74,13 @@ function Projects() {
           </div>
 {/* project1 */}
           <div className="border bg-slate-50 m-3 shadow-md flex flex-col justify-between">
-            <div className="flex flex-col items-center p-8 space-y-5">
+            <div className="flex flex-col items-center p-8 space-y-5 text-center">
               <h3 className="text-3xl text-green-800 font-semibold">Clone pole-emploi.fr</h3>
-              <div className="text-slate-800 text-base flex flex-col items-center">
+              <div className="text-slate-800 text-base">
                   <p>React, Tailwind</p>
                   <p>headlessui</p>
               </div>
-              <div className="flex justify-between gap-10">
+              <div className="flex justify-between gap-10 text-xs">
                 <a
                   href="https://mrnguyencoder.github.io/clone-pole-emploi.fr/"
                   rel='noreferrer' target="_blank"

@@ -58,9 +58,9 @@ function Home() {
 
       {/* main right home  */}
       <div className="w-full md:w-[92%] ">
-
+{/* item 1 */}
         <div className="bg-gradient-to-r from-[#61dbfb] to-[#f0db4f]
-                        m-3 p-6 shadow-md rounded-xl space-y-3
+                        my-3 mx-8 p-6 shadow-md rounded-xl space-y-3
         ">
           <motion.h1 className="flex flex-col animate-pulse text-xl md:text-4xl lg:text-6xl text-center text-[#3C873A]  "
             initial={{
@@ -85,7 +85,7 @@ function Home() {
           Here you can find out more about me, my skills and the projects I've worked on.
           </p>
         </div>
-
+{/* item 2 use react-simple-typewriter*/}
         <motion.div className=""
             initial={{
               x: 500,
@@ -110,7 +110,7 @@ function Home() {
             </div>
         </motion.div>
 
-
+{/* item 3 Q_A use headlessui:Disclosure  */}
         <div className="m-3 p-5 shadow-sm rounded">
           <div className='mx-auto w-full rounded-2xl bg-white p-2'>
           <Disclosure>
@@ -169,7 +169,7 @@ function Home() {
           </div>
           
         </div>
-
+{/* item 4 skills */}
         <div className="m-3 p-6 shadow-sm rounded ">
           <div className="flex justify-center items-center">
             <div className="grid grid-cols-4 gap-16
@@ -179,13 +179,13 @@ function Home() {
               <SiCss3 className='text-[#264de4]'/>
               <SiJavascript className='text-[#F0DB4F]'/>
               <SiReact className='text-[#61DBFB]'/>
-              <SiGithub className='text-[#171515]'/>
               <SiTailwindcss className='text-[#00b8d7]'/>
-              <SiGraphql className='text-[#e535ab]'/>
-              <SiFirebase className='text-[#FFA611]'/>
-              <SiMysql className='text-[#00758f]'/>
+              <SiGithub className='text-[#171515]'/>
               <SiNodedotjs className='text-[#215732]'/>
               <SiMongodb className='text-[#589636]'/>
+              <SiGraphql className='text-[#e535ab]'/>
+              {/* <SiFirebase className='text-[#FFA611]'/> */}
+              <SiMysql className='text-[#00758f]'/>
             </div>
           </div>
         </div>
