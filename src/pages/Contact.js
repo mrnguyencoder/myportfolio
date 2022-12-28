@@ -28,19 +28,26 @@ function Contact() {
         visible: { opacity: 1, x: 0},
       }}
     >
-     <div className="flex flex-col text-center space-y-8">
-      <h2 className="text-xl md:text-2xl lg:text-4xl text-amber-400 underline">
-        Contact me to get started</h2>
+     <div className="flex flex-col text-center space-y-6">
+      <h2 className="text-4xl text-[#61dbfb]">
+        Contact me to get started
+      </h2>
+      <div className="flex justify-center">
+          <div className="border-4 border-blue-600 w-20"></div>
+          <div className="border-4 border-slate-50 w-20"></div>
+          <div className="border-4 border-red-600 w-20"></div>
+      </div>
+      
         <div className="space-y-3">
           <div className="flex justify-center items-center space-x-3">
             <FaPhoneVolume className='max-h-7 max-w-7 animate-bounce text-fuchsia-500' />
             <a href="tel:33782885224"
-            className="text-xl md:text-2xl lg:text-3xl">+33-782885224</a>
+            className="text-xl md:text-2xl lg:text-3xl text-slate-600">+33-782885224</a>
           </div>
           <div className="flex justify-center items-center space-x-3">
             <FaWhatsapp className='max-h-7 max-w-7 animate-bounce text-[#25d366]' />
             <a href="https://wa.me/33782885224"
-            className="text-xl md:text-2xl lg:text-3xl">+33-782885224</a>
+            className="text-xl md:text-2xl lg:text-3xl text-[#25d366]">+33-782885224</a>
           </div>
           <div className="flex justify-center items-center space-x-3">
             <SiGmail className='max-h-7 max-w-7 animate-pulse text-red-600'/>
