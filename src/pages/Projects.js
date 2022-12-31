@@ -2,6 +2,7 @@ import React from 'react';
 import Project1 from '../assets/pj1.png';
 import Project2 from '../assets/pj2.png';
 import Project3 from '../assets/pj3.png';
+import Project4 from '../assets/pj4.png';
 
 function Projects() {
   return (
@@ -72,7 +73,7 @@ function Projects() {
             <img className='w-full ' src={Project2} alt="nguyen coder project" />
             </div>
           </div>
-{/* project1 */}
+{/* project3 */}
           <div className="border bg-slate-50 m-3 shadow-md flex flex-col justify-between">
             <div className="flex flex-col items-center p-8 space-y-5 text-center">
               <h3 className="text-3xl text-green-800 font-semibold">Clone pole-emploi.fr</h3>
@@ -99,6 +100,35 @@ function Projects() {
             </div>
             <div className="">
             <img className='w-full ' src={Project3} alt="nguyen coder project" />
+            </div>
+          </div>
+{/* project4 */}
+          <div className="border bg-slate-50 m-3 shadow-md flex flex-col justify-between">
+            <div className="flex flex-col items-center p-8 space-y-5 text-center">
+              <h3 className="text-3xl text-green-800 font-semibold">Journaliste web</h3>
+              <div className="text-slate-800 text-base">
+                  <p>React, Tailwind</p>
+                  <p>Deploy netlify</p>
+              </div>
+              <div className="flex justify-between gap-10 text-xs">
+                <a
+                  href="https://sonia-rachline.netlify.app/"
+                  rel='noreferrer' target="_blank"
+                  className="animate-pulse py-2 px-4 rounded-full border border-orange-500 font-bold hover:border-orange-700"
+                  >
+                  Live demo
+                </a>
+                <a
+                  href="https://github.com/mrnguyencoder/sonia-rachline.fr"
+                  rel='noreferrer' target="_blank"
+                  className="py-2 px-4 rounded-full border border-slate-300 hover:border-slate-400 "
+                  >
+                  Source code
+                </a>
+              </div>
+            </div>
+            <div className="">
+            <img className='w-full ' src={Project4} alt="nguyen coder project" />
             </div>
           </div>
 
