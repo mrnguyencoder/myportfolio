@@ -15,7 +15,7 @@ function Projects() {
           photo: carole,
         },
         {
-          title: `Auteure, Rédactrice and Journaliste`,
+          title: `auteure, rédactrice and journaliste`,
           description:
             `présentation du livre`,
           site:
@@ -24,9 +24,9 @@ function Projects() {
           photo: sonia,
         },
         {
-          title: `Accompagnement à la parentalité`,
+          title: `accompagnement à la parentalité`,
           description:
-            `Présentation des services et tarifs`,
+            `présentation des services et tarifs`,
           site:
             `https://unemaintendue-conseils.fr/`,
           code: `https://github.com/mrnguyencoder/Vite-unemaintendue-conseils`,

@@ -27,7 +27,7 @@ function Navbar() {
             <a
                 href="../assets/CV-NGuyen.pdf" 
                 download="CV nguyen"
-                className="inline-flex rounded-md bg-white/10 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:text-yellow-300"
+                className="inline-flex rounded-md bg-yellow-300/10 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:text-yellow-300"
             >
                 Télécharger mon CV
             </a>
