@@ -25,7 +25,7 @@ function Navbar() {
             </div>
             <div className="ml-10 ">
             <a
-                href="../assets/CV-NGuyen.pdf" 
+                href="/assets/CV-NGuyen.pdf" 
                 download="CV nguyen"
                 className="inline-flex rounded-md bg-yellow-300/10 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:text-yellow-300"
             >
