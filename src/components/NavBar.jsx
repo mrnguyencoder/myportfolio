@@ -31,6 +31,7 @@ function Navbar() {
             >
                 Télécharger mon CV
             </a>
+
             </div>
         </div>
         <div className="flex flex-wrap justify-center gap-x-6 py-4 lg:hidden">
