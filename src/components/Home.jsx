@@ -3,12 +3,12 @@ import working from '../assets/meeting.jpg';
 
 function Home() {
   return (
-    <div className="relative bg-gray-900">
+    <section id="home" className="relative bg-slate-900">
     <div className="relative h-80 overflow-hidden bg-indigo-600 md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
       <img
         className="h-full w-full object-cover"
         src={working}
-        alt=""
+        alt="nguyen dev nguyen coder"
       />
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -31,29 +31,31 @@ function Home() {
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#776FFF" />
-            <stop offset={1} stopColor="#FF4694" />
+            <stop offset={1} stopColor="#FF46" />
           </linearGradient>
         </defs>
       </svg>
     </div>
     <div className="relative mx-auto max-w-7xl py-24 sm:py-32 lg:py-40 lg:px-8">
       <div className="pr-6 pl-6 md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2 lg:pl-24 lg:pr-0 xl:pl-32">
-        <h2 className="text-base font-semibold leading-7 text-indigo-400">React JS Developer</h2>
-        <p className="mt-2 text-4xl font-bold tracking-tight text-white">What I can do?</p>
+        <h2 className="text-base font-semibold leading-7 text-yellow-300">React JS Developer</h2>
+        <p className="mt-2 text-4xl font-bold tracking-tight text-green-500">Let's work together to build great things!</p>
         <p className="mt-6 text-base leading-7 text-gray-300">
-        I create and maintain websites. I am also responsible for the site's technical aspects, such as its performance and capacity, which are measures of a website's speed and how much traffic the site can handle. In addition, I may create content for the site.
+        Bonjour, je suis Van Duy NGUYEN, un développeur web avec plus d'un an d'expérience spécialisé en React JS. 
+        J'ai une solide compréhension du cadre React et j'ai réussi à livrer de nombreux projets qui ont montré mes compétences dans la construction d'applications web interactives et conviviales. Avec ma passion pour la technologie et ma soif constante de connaissances, je suis toujours à la recherche de nouveaux défis pour améliorer mes compétences et créer des solutions innovantes. 
+        Je cherche des opportunités pour poursuivre ma carrière en tant que développeur web et faire une impact positif sur les projets sur lesquels je travaille. Travaillons ensemble pour construire de grandes choses!
         </p>
         <div className="mt-8">
           <a
-            href="#"
-            className="inline-flex rounded-md bg-white/10 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            href="#projects"
+            className="inline-flex rounded-md bg-white/10 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:text-yellow-300"
           >
-            Visit my Projects
+            Visitez mes projets
           </a>
         </div>
       </div>
     </div>
-  </div>
+  </section>
   )
 }
 

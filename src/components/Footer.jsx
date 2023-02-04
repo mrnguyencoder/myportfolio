@@ -4,7 +4,7 @@ function Footer() {
     const navigation = [
         {
           name: 'Instagram',
-          href: '#',
+          href: 'https://www.instagram.com/nguyencoder/',
           icon: (props) => (
             <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
               <path
@@ -17,7 +17,7 @@ function Footer() {
         },
         {
           name: 'GitHub',
-          href: '#',
+          href: 'https://github.com/mrnguyencoder',
           icon: (props) => (
             <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
               <path
@@ -30,7 +30,7 @@ function Footer() {
         },
       ]
   return (
-    <footer className="bg-white">
+    <footer className="bg-slate-100">
         <div className="mx-auto max-w-7xl py-12 px-6 md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center space-x-6 md:order-2">
             {navigation.map((item) => (

@@ -25,8 +25,9 @@ function Navbar() {
             </div>
             <div className="ml-10 ">
             <a
-                href="#"
-                className="inline-block rounded-md border border-transparent bg-green-600 py-2 px-4 text-base font-medium text-white hover:bg-opacity-75"
+                href="../assets/CV-NGuyen.pdf" 
+                download="CV nguyen"
+                className="inline-flex rounded-md bg-white/10 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:text-yellow-300"
             >
                 Télécharger mon CV
             </a>

@@ -1,56 +1,56 @@
-import React from 'react'
+import React from 'react';
+import carole from '../assets/carole.png';
+import sonia from '../assets/sonia.png';
+import agnes from '../assets/agnes.png';
 
 function Projects() {
-    const posts = [
-        // {
-        //   title: `abc`,
-        //   href: '#',
-        //   code: `` ,
-        //   description:
-        //     ``,
-        //   image: ``,
-        //   used: ``
-        // },
+    const project = [
         {
-          title: 'photographe de plateau',
+          title: `photographe de plateau`,
           description:
-            '',
+            `album photo pour chaque film`,
           site:
-            'https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
-          code: ``,
+            `https://carolebethuel.fr/`,
+          code: `https://github.com/mrnguyencoder/carole-bethuel`,
+          photo: carole,
+        },
+        {
+          title: `Auteure, Rédactrice and Journaliste`,
+          description:
+            `présentation du livre`,
+          site:
+            `https://soniarachline.fr/`,
+          code: `https://github.com/mrnguyencoder/sonia-rachline.fr`,
+          photo: sonia,
+        },
+        {
+          title: `Accompagnement à la parentalité`,
+          description:
+            `Présentation des services et tarifs`,
+          site:
+            `https://unemaintendue-conseils.fr/`,
+          code: `https://github.com/mrnguyencoder/Vite-unemaintendue-conseils`,
+          photo: agnes,
         },
       ]
   return (
-    <div className="relative bg-gray-50 px-6 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28">
-    <div className="absolute inset-0">
-      <div className="h-1/3 bg-white sm:h-2/3" />
-    </div>
-    <div className="relative mx-auto max-w-7xl">
-      <div className="text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">My projects</h2>
-        <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
-          My stack is React JS - Vite 
-        </p>
-      </div>
-      <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
-        {posts.map((post) => (
-          <div key={post.title} className="flex flex-col overflow-hidden rounded-lg shadow-lg">
-            <div className="flex-shrink-0">
-              <img className="h-48 w-full object-cover" src={post.site} alt="" />
-            </div>
-            <div className="flex flex-1 flex-col justify-between bg-white p-6">
-                <p className="text-xl font-semibold text-gray-900">{post.title}</p>
-                <p className="mt-3 text-base text-gray-500">{post.description}</p>
-            </div>
-            <div className="flex">
-                <button>Site {post.code}</button>
-                <button>Code {post.code}</button>
+
+    <section id="projects" className="py-16 px-4 bg-slate-50 text-slate-900 ">
+      <h2 className="text-3xl py-16 text-center text-green-500 font-bold">My Projects</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {project.map((item) => (
+          <div key={item.title} className="space-y-4 text-center shadow-sm px-2 py-6 bg-slate-200 rounded-xl">
+            <h3 className="text-center text-2xl font-bold">{item.title}</h3>
+            <p className="text-xl text-slate-600">{item.description}</p>
+            <div className='p-6'><img src={item.photo} alt="nguyen dev projects" className="rounded-xl shadow-lg hover:opacity-80" /></div>
+            <div className="flex justify-between px-16">
+              <a href={item.site} className="bg-green-500 px-6 py-2 text-yellow-400 rounded-full shadow-md hover:opacity-80">Site</a>
+              <a href={item.code} className="bg-slate-500 px-6 py-2 text-slate-50 rounded-full shadow-md hover:opacity-80">Code</a>
             </div>
           </div>
         ))}
       </div>
-    </div>
-    </div>
+    </section>
   )
 }
 
