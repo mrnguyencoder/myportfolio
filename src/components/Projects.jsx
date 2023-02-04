@@ -39,13 +39,13 @@ function Projects() {
               <img className="h-48 w-full object-cover" src={post.site} alt="" />
             </div>
             <div className="flex flex-1 flex-col justify-between bg-white p-6">
-                  <p className="text-xl font-semibold text-gray-900">{post.title}</p>
-                  <p className="mt-3 text-base text-gray-500">{post.description}</p>
-              <div className="mt-6 flex items-center">
-              </div>
+                <p className="text-xl font-semibold text-gray-900">{post.title}</p>
+                <p className="mt-3 text-base text-gray-500">{post.description}</p>
             </div>
-            <button>Site {post.code}</button>
-            <button>Code {post.code}</button>
+            <div className="flex">
+                <button>Site {post.code}</button>
+                <button>Code {post.code}</button>
+            </div>
           </div>
         ))}
       </div>
