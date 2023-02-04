@@ -1,5 +1,5 @@
 import React from 'react';
-import carole from '../assets/carole.png';
+import carole from '../assets/carole.jpg';
 import sonia from '../assets/sonia.png';
 import agnes from '../assets/agnes.png';
 
@@ -44,8 +44,8 @@ function Projects() {
             <p className="text-xl text-slate-600">{item.description}</p>
             <div className='p-6'><img src={item.photo} alt="nguyen dev projects" className="rounded-xl shadow-lg hover:opacity-80" /></div>
             <div className="flex justify-between px-16">
-              <a href={item.site} className="bg-green-500 px-6 py-2 text-yellow-400 rounded-full shadow-md hover:opacity-80">Site</a>
-              <a href={item.code} className="bg-slate-500 px-6 py-2 text-slate-50 rounded-full shadow-md hover:opacity-80">Code</a>
+              <a href={item.site} target="_blank" rel="noreferrer" className="bg-green-500 px-6 py-2 text-yellow-400 rounded-full shadow-md hover:opacity-80">Site</a>
+              <a href={item.code} target="_blank" rel="noreferrer" className="bg-slate-500 px-6 py-2 text-slate-50 rounded-full shadow-md hover:opacity-80">Code</a>
             </div>
           </div>
         ))}
